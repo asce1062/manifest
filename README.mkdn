@@ -1,0 +1,67 @@
+AOSPA-Legacy(Paranoid Android) Source For LG L7 && L5
+=================================
+To get started with AOSPA-Legacy, you'll need to get
+familiar with [Git and Repo](http://source.android.com/source/version-control.html).
+
+Create the Directories
+----------------------
+
+You will need to set up some directories in your build environment.
+
+To create them run:
+
+    mkdir -p ~/bin
+    mkdir -p ~/android/pa
+
+Install the Repository
+----------------------
+
+Enter the following to download the "repo" binary:
+
+    curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+
+    chmod a+x ~/bin/repo
+
+You may need to reboot for these changes to take effect. 
+Now enter the following to initialize the repository:
+
+    cd ~/android/pa
+
+Repositories:
+-------------
+
+Before you continue --> run this in the terminal
+
+    repo init -u https://github.com/asce1062/manifest -b kitkat
+
+    repo sync
+    
+
+Building the System
+---------------
+
+Apply Classic Webview Patch && No text Auto-sizing For Browser (A MUST!)
+     
+    . build/envsetup.sh
+
+    cd device/lge/msm7x27a-common/patches && ./apply.sh
+
+    croot
+
+Build CyanHacker with the following commands
+
+    . build/envsetup.sh
+
+    lunch (enter device number and hit enter)
+
+    ./rom-build.sh {device}
+    
+Example:
+
+    . build/envsetup.sh
+
+    lunch
+
+    Which would you like? [aosp_arm-eng] 6 (Number For P705, this could varry depending on the number of devices you are building)
+
+    ./rom-build.sh p705
