@@ -48,7 +48,7 @@ Apply Classic Webview Patch && No text Auto-sizing For Browser (A MUST!)
 
     croot
 
-Build CyanHacker with the following commands
+Build AOSPA-Legacy with the following commands
 
     . build/envsetup.sh
 
