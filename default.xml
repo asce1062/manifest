@@ -483,7 +483,7 @@
   <project path="vendor/lge" name="asce1062/android_vendor_lge" remote="github" revision="master" />
   <project path="kernel/lge/SKernel" name="shskyinfo/SKernel" remote="github" revision="master" />
   <project path="kernel/lge/msm7x27a-common" name="asce1062/android_kernel_lge_msm7x27a-common" remote="github" revision="beta_9.5" />
-  <project path="device/lge/msm7x27a-common" name="asce1062/android_device_lge_msm7x27a-common" remote="github" revision="master" />
+  <project path="device/lge/msm7x27a-common" name="asce1062/android_device_lge_msm7x27a-common" remote="github" revision="pa" />
   <project path="device/lge/e610" name="asce1062/pa_android_device_lge_e610"  remote="github" revision="master" />
   <project path="device/lge/p705" name="asce1062/pa_android_device_lge_p705"  remote="github" revision="master" />
   <project path="device/lge/p700" name="asce1062/pa_android_device_lge_p700"  remote="github" revision="master" />
